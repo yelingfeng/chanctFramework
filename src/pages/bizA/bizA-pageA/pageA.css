@@ -1,0 +1,7 @@
+@component-namespace pageA{
+    @b menu{
+        background: #fff;
+        padding : 20px;
+        border : 1px solid #ccc;
+    }
+}

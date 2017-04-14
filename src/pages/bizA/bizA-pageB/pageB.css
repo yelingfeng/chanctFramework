@@ -1,0 +1,16 @@
+@component-namespace pageB{
+    @b body{
+        background-color: #fff ;
+        padding : 25px;
+        border : 1px solid #ccc;
+
+        @e menu {
+            height : 200px;
+
+            & li {
+                padding: 5px;
+                color : aquamarine;
+            }
+        }
+    }
+}

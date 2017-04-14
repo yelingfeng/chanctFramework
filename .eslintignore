@@ -1,0 +1,6 @@
+build/*.js
+config/*.js
+static/*.js
+node_modules/*
+.eslintrc.js
+.idea
