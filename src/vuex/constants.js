@@ -8,6 +8,6 @@
  * 全局action键值
  */
 export const GLOBAL = {
-    GET_TEST_DATA :'GET_TEST_DATA',
-    SAVE_MENU_DATA:'SAVE_MENU_DATA'
+    GET_TEST_DATA: 'GET_TEST_DATA',
+    SAVE_MENU_DATA: 'SAVE_MENU_DATA'
 }

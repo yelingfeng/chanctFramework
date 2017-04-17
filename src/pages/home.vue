@@ -9,22 +9,22 @@
 </template>
 
 <script>
-    import { mapGetters } from 'vuex'
+    import {mapGetters} from 'vuex'
     export default {
         name: 'hello',
-        data () {
+        data() {
             return {
-                msg : 'Welcome to Your Vue.js App'
+                msg: 'Welcome to Your Vue.js App'
             }
         },
-        created(){
+        created() {
             console.log('test jquery window width:' + $(window).width())
             console.log('test lodash ', _.max([1, 3, 5]))
             console.log('test createjs ', window.createjs)
         },
-        computed:{
+        computed: {
             ...mapGetters({
-                list:'global/getMenus'
+                list: 'global/getMenus'
             })
         }
     }

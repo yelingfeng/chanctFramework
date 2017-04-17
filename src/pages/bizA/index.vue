@@ -5,15 +5,13 @@
 </template>
 <script>
     export default{
-        data(){
-            return{
-                msg:'hello vue'
+        data() {
+            return {
+                msg: 'hello vue'
             }
         },
-        components:{
-        },
-        method:{
-        }
+        components: {},
+        method: {}
     }
 </script>
 <style>

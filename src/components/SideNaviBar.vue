@@ -2,21 +2,20 @@
     <div></div>
 </template>
 <script>
-    import { menu } from 'router/router.config'
+    import {menu} from 'router/router.config'
     import navMenu from './Menu'
     export default{
         name: 'sidebar',
-        data(){
+        data() {
             return {
-                'menu':menu,
-                collapsed:false
+                'menu': menu,
+                collapsed: false
             }
         },
         components: {
             navMenu
         },
-        methods: {
-        }
+        methods: {}
     }
 </script>
 <style>

@@ -5,14 +5,18 @@
                 <template v-for="(route, index) in $router.options.routes">
                     <template v-if="route.children && route.name">
                         <el-submenu :index="route.name">
-                            <template slot="title"><i :class="['fa',`fa-${route.icon}`]"></i><router-link :to="route.path">{{route.name}}</router-link></template>
-                            <el-menu-item :key="cRoute.name"  v-for="(cRoute, cIndex) in route.children" >
+                            <template slot="title"><i :class="['fa',`fa-${route.icon}`]"></i>
+                                <router-link :to="route.path">{{route.name}}</router-link>
+                            </template>
+                            <el-menu-item :key="cRoute.name" v-for="(cRoute, cIndex) in route.children">
                                 <router-link :to="`${route.path}/${cRoute.path}`">{{cRoute.name}}</router-link>
                             </el-menu-item>
                         </el-submenu>
                     </template>
                     <template v-if="!route.children && route.name">
-                        <el-menu-item :index="route.path" ><i :class="['fa',`fa-${route.icon}`]"></i>{{route.name}}</el-menu-item>
+                        <el-menu-item :index="route.path"><i :class="['fa',`fa-${route.icon}`]"></i>{{route.name}}
+
+                        </el-menu-item>
                     </template>
                 </template>
             </el-menu>
@@ -25,27 +29,30 @@
 
 </template>
 <script>
+    import {ajax} from 'common'
     import SideNaviBar from 'components/SideNaviBar.vue'
     export default {
         name: 'app',
-        data(){
+        data() {
             return {
                 activeMenu: '1'
             }
         },
-        created(){
+        created() {
         },
-        mounted(){
+        mounted() {
             // ajax测试
-            this.$store.dispatch('global/loadMenuData')
+            // this.$store.dispatch('global/loadMenuData')
+            ajax.get('/api/user?action=get').then(resp => {
+                console.log(resp)
+            })
         },
         components: {
             navBar: SideNaviBar
         },
-        watch: {
-        },
+        watch: {},
         methods: {
-            handleSelect(){
+            handleSelect() {
 
             }
         }
@@ -62,30 +69,31 @@
         color: #2c3e50;
     }
 
-    #app{
-        size : 100%;
+    #app {
+        size: 100%;
     }
 
     a {
-        color :#cccccc;
+        color: #cccccc;
         text-decoration: none;
     }
 
     .fade-enter-active, .fade-leave-active {
         transition: opacity .5s
     }
+
     .fade-enter, .fade-leave-active {
         opacity: 0
     }
 
-    .app-home{
-        width : 1000px;
+    .app-home {
+        width: 1000px;
         height: 100%;
         margin: 0 auto;
     }
 
-    .content{
-        margin-top : 20px;
+    .content {
+        margin-top: 20px;
         padding: 50px;
         border: 1px solid #ccc;
     }

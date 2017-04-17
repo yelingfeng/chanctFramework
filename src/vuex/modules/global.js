@@ -8,7 +8,7 @@ import { ajax } from 'common'
  */
 const state = {
     // 菜单数据
-    menuData : []
+    menuData: []
 }
 
 /**

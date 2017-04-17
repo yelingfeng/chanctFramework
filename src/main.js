@@ -9,12 +9,10 @@ import axios from 'axios';
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css';
 
-
 Vue.use(ElementUI)
 
 import 'font-awesome/css/font-awesome.css'
 window.axios = axios;
-
 
 sync(store, router)
 

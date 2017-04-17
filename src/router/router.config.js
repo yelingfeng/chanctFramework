@@ -4,14 +4,13 @@ import bizApageA from 'pages/bizA/bizA-pageA/pageA'
 import bizApageB from 'pages/bizA/bizA-pageB/pageB'
 import bizB from 'pages/bizB'
 
-
 const menu = [
     {
-        path : '/home',
-        icon : 'home',
-        name : 'home',
-        label : 'home',
-        component : home
+        path: '/home',
+        icon: 'home',
+        name: 'home',
+        label: 'home',
+        component: home
     },
     {
         path: '/bizA',
@@ -33,12 +32,12 @@ const menu = [
         component: bizApageB
     },
     {
-        path :'/bizB',
-        icon :'laptop',
-        name : 'bizB',
-        label : 'bizB',
-        component : bizB,
+        path: '/bizB',
+        icon: 'laptop',
+        name: 'bizB',
+        label: 'bizB',
+        component: bizB,
         isShowSubMenu: false
     }
 ]
-export  {menu}
+export { menu }

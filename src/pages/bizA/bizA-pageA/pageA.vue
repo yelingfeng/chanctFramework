@@ -5,17 +5,14 @@
 </template>
 <script>
     export default{
-        name :'pageA',
-        data(){
-            return{
-            }
+        name: 'pageA',
+        data() {
+            return {}
         },
-        components:{
-        },
-        method:{
-        }
+        components: {},
+        method: {}
     }
 </script>
 <style>
-/*@import "./pageA.css"*/
+    /*@import "./pageA.css"*/
 </style>

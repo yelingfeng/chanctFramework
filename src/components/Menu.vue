@@ -2,15 +2,14 @@
 </template>
 <script>
     export default{
-        name : 'menu',
-        data(){
+        name: 'menu',
+        data() {
             return {}
         },
-        created(){
+        created() {
         },
         components: {},
-        methods: {
-        }
+        methods: {}
     }
 </script>
 <style>
