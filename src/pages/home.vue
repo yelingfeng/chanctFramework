@@ -1,7 +1,6 @@
 <template>
     <div class="hello">
         <h1>{{ msg }}</h1>
-        <h2>hello </h2>
         <ul>
             <li v-for="item in list">{{item.name}}</li>
         </ul>
@@ -14,13 +13,13 @@
         name: 'hello',
         data() {
             return {
+                styleObj: {
+                    color: 'red'
+                },
                 msg: 'Welcome to Your Vue.js App'
             }
         },
         created() {
-            console.log('test jquery window width:' + $(window).width())
-            console.log('test lodash ', _.max([1, 3, 5]))
-            console.log('test createjs ', window.createjs)
         },
         computed: {
             ...mapGetters({

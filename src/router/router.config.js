@@ -1,8 +1,8 @@
-import home from 'pages/home'
-import bizA from 'pages/bizA'
-import bizApageA from 'pages/bizA/bizA-pageA/pageA'
-import bizApageB from 'pages/bizA/bizA-pageB/pageB'
-import bizB from 'pages/bizB'
+import home from '../pages/home'
+import bizA from '../pages/bizA'
+import bizApageA from '../pages/bizA/bizA-pageA/pageA'
+import bizApageB from '../pages/bizA/bizA-pageB/pageB'
+import bizB from '../pages/bizB'
 
 const menu = [
     {

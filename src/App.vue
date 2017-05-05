@@ -15,7 +15,6 @@
                     </template>
                     <template v-if="!route.children && route.name">
                         <el-menu-item :index="route.path"><i :class="['fa',`fa-${route.icon}`]"></i>{{route.name}}
-
                         </el-menu-item>
                     </template>
                 </template>
@@ -23,13 +22,11 @@
             <div class="content">
                 <router-view></router-view>
             </div>
-
         </div>
     </div>
 
 </template>
 <script>
-    import {ajax} from 'common'
     import SideNaviBar from 'components/SideNaviBar.vue'
     export default {
         name: 'app',
@@ -42,10 +39,7 @@
         },
         mounted() {
             // ajax测试
-            // this.$store.dispatch('global/loadMenuData')
-            ajax.get('/api/user?action=get').then(resp => {
-                console.log(resp)
-            })
+            this.$store.dispatch('global/loadMenuData')
         },
         components: {
             navBar: SideNaviBar

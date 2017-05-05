@@ -2,7 +2,7 @@
     <div></div>
 </template>
 <script>
-    import {menu} from 'router/router.config'
+    import {menu} from '../router/router.config'
     import navMenu from './Menu'
     export default{
         name: 'sidebar',

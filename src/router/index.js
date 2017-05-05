@@ -1,9 +1,6 @@
 /**
  * Created by ylf on 2017/4/11.
  */
-/**
- * Created by ylf on 2017/4/10.
- */
 import Vue from 'vue'
 import Router from 'vue-router'
 import {menu} from './router.config'
@@ -12,8 +9,6 @@ Vue.use(Router)
 let routes = menu.map(function(item) {
     return item
 })
-
-console.log(routes)
 
 routes.push({
     path: '*',
