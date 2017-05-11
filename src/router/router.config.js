@@ -1,8 +1,5 @@
 import home from '../pages/home'
-import bizA from '../pages/bizA'
-import bizApageA from '../pages/bizA/bizA-pageA/pageA'
-import bizApageB from '../pages/bizA/bizA-pageB/pageB'
-import bizB from '../pages/bizB'
+import layout from '../pages/testApp/layout-2.vue'
 
 const menu = [
     {
@@ -13,30 +10,11 @@ const menu = [
         component: home
     },
     {
-        path: '/bizA',
+        path: '/layout',
         icon: 'dashboard',
-        name: 'bizA',
-        label: 'bizA',
-        component: bizA
-    },
-    {
-        path: '/bizA/pageA',
-        name: 'pageA',
-        label: 'pageA',
-        component: bizApageA
-    },
-    {
-        path: '/bizA/pageB',
-        name: 'pageB',
-        label: 'pageB',
-        component: bizApageB
-    },
-    {
-        path: '/bizB',
-        icon: 'laptop',
-        name: 'bizB',
-        label: 'bizB',
-        component: bizB,
+        name: 'layout',
+        label: 'layout',
+        component: layout,
         isShowSubMenu: false
     }
 ]

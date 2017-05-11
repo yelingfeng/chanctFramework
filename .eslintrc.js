@@ -13,7 +13,8 @@ module.exports = {
         "document": true,
         "process": true,
         "__dirname": true,
-        "Promise": true
+        "Promise": true,
+        "echarts":true
     },
     "evn": {
         "browser": true,
