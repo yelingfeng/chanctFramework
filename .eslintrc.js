@@ -65,10 +65,7 @@ module.exports = {
         }],
 
         // 缩进4个空格 swtich case缩进
-        "indent": [2, 4, {
-            "SwitchCase": 1,
-            "VariableDeclarator": 1
-        }],
+        "indent": ["error", 4],
 
         // 要求或禁止使用分号代替
         "semi": [0, "always"],
