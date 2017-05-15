@@ -11,7 +11,7 @@ export default {
         titleName: {
             type: String,
             default() {
-                return {}
+                return ''
             }
         }
     }

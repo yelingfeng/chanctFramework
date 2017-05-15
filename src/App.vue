@@ -1,11 +1,10 @@
 <template>
     <div id="app" class="viewBg">
-        <test></test>
+        <demo></demo>
     </div>
-
 </template>
 <script>
-    import TestApp from 'pages/testApp/layout-4'
+    import demo from 'pages/testApp/layoutTest'
     export default {
         name: 'app',
         mounted() {
@@ -13,7 +12,7 @@
             // this.$store.dispatch('global/loadMenuData')
         },
         components: {
-            test: TestApp
+            demo
         },
         watch: {}
     }
@@ -33,11 +32,12 @@
     #app {
         size: 100%;
     }
-    .viewBg{
-      background:url("~assets/images/mainBg.jpg");
-      background-repeat: repeat;
-      background-size: cover;
-      background-attachment: fixed;
+
+    .viewBg {
+        background: url("~assets/images/mainBg.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
 </style>
