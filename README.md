@@ -1,6 +1,6 @@
-# chanctframework
+# xframework
 
-> chanct FE 
+> a framework 
 
 ## Build Setup
 
