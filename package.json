@@ -1,7 +1,7 @@
 {
-  "name": "chanctframework",
+  "name": "xframework",
   "version": "0.0.1",
-  "description": "chanct FE ",
+  "description": "a framework",
   "author": "renxiaofan <yelingfeng521@gmail.com>",
   "private": true,
   "scripts": {
